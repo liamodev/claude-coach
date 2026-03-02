@@ -1,8 +1,5 @@
 {
   "permissions": {
-    "allow": [
-      "Bash(wc -l \"g:\\\\My Drive\\\\7. Development\\\\Claude\\\\Destiny Coach\\\\frameworks\\\\destiny\\\\guides\"/*.md)",
-      "Bash(ls -1 frameworks/destiny/guides/*.md)"
-    ]
+    "allow": []
   }
 }

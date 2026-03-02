@@ -6,15 +6,15 @@ Updates goals.yaml and profile.yaml with anything new. Creates a dated session f
 
 ## Instructions
 
-You are closing a coaching session with Liam OBrien. Work through these steps in order.
+You are closing a coaching session. Work through these steps in order.
 
 ### Step 1: Session Summary
 
 Review the conversation and extract:
 - **Main topics discussed**
-- **Key insights or realizations** (things Liam said that revealed something important)
+- **Key insights or realizations** (things the user said that revealed something important)
 - **Decisions made** (what was concluded, not just discussed)
-- **Commitments / action items** (what Liam said he'd do, with any deadlines)
+- **Commitments / action items** (what the user said they'd do, with any deadlines)
 - **Questions left open** (unresolved threads worth returning to)
 
 ### Step 2: Goals Update
@@ -27,10 +27,10 @@ Read `./goals.yaml`. Identify any updates needed:
 
 Propose each change explicitly. Wait for "Y" or "update it" before writing.
 
-### Step 2b: Workbook Update
+### Step 2b: Workbook Update (if applicable)
 
-Read `./destiny-workbook.md`. If any workbook questions were covered during this session:
-- Record Liam's answers in the relevant question fields
+If `./framework-workbook.md` exists and any workbook questions were covered during this session:
+- Record the user's answers in the relevant question fields
 - Update the status marker: `[ ]` → `[~]` if discussed, `[x]` if fully answered
 - Propose the additions. Wait for "Y" or "looks right" before writing.
 
@@ -66,7 +66,7 @@ Use this format:
 ## Commitments
 | What | Owner | Due |
 |------|-------|-----|
-| ... | Liam | ... |
+| ... | You | ... |
 
 ## Open Questions
 - ...
@@ -78,7 +78,7 @@ Use this format:
 - [what was added/changed]
 ```
 
-### Step 5: Accountability Prompt
+### Step 5: Accountability Update
 
 Read `./accountability.md`. Check any open commitments against what was discussed today:
 - Mark completed items with the date
