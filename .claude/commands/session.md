@@ -2,7 +2,7 @@
 
 ## Description
 Close out a coaching session by capturing what was discussed, decided, and committed to.
-Updates goals.yaml and profile.yaml with anything new. Creates a dated session file.
+Updates core files with anything new. Creates a dated session file.
 
 ## Instructions
 
@@ -19,7 +19,7 @@ Review the conversation and extract:
 
 ### Step 2: Goals Update
 
-Read `./goals.yaml`. Identify any updates needed:
+Read `./core/goals.yaml`. Identify any updates needed:
 - Progress % changed?
 - Milestone completed?
 - New goal or milestone added?
@@ -29,14 +29,14 @@ Propose each change explicitly. Wait for "Y" or "update it" before writing.
 
 ### Step 2b: Workbook Update (if applicable)
 
-If `./framework-workbook.md` exists and any workbook questions were covered during this session:
+If `./frameworks/framework-workbook.md` exists and any workbook questions were covered during this session:
 - Record the user's answers in the relevant question fields
 - Update the status marker: `[ ]` → `[~]` if discussed, `[x]` if fully answered
 - Propose the additions. Wait for "Y" or "looks right" before writing.
 
 ### Step 3: Profile Update
 
-Read `./profile.yaml`. Identify anything worth capturing:
+Read `./core/profile.yaml`. Identify anything worth capturing:
 - New background context shared
 - A pattern observed (strength or blind spot)
 - A win to record
@@ -80,7 +80,7 @@ Use this format:
 
 ### Step 5: Accountability Update
 
-Read `./accountability.md`. Check any open commitments against what was discussed today:
+Read `./core/accountability.md`. Check any open commitments against what was discussed today:
 - Mark completed items with the date
 - Carry forward items still open (update status if needed)
 - Add any new commitments made in this session
@@ -90,7 +90,7 @@ Propose all changes. Wait for "Y" or confirmation before writing.
 
 ### Step 5b: Coach Notes Update
 
-Add a brief narrative entry to `./coach-notes.md` under Session Entries (newest first):
+Add a brief narrative entry to `./core/coach-notes.md` under Session Entries (newest first):
 - What surfaced — the real stuff, not just the agenda
 - Patterns noticed — what showed up again, what was new
 - What to watch for next time

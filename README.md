@@ -14,19 +14,22 @@ Claude operates as a **business coach and mentor** — not an assistant. It chal
 
 Claude will interview you and populate `profile.yaml` and `goals.yaml` for you. Have any supporting documents ready to paste (resume, business plan, job description — whatever's relevant).
 
-**3. (Optional) Add a coaching framework**
+**3. (Optional) Build a coaching framework**
 
-Drop your framework content into `./frameworks/`. See [frameworks/README.md](frameworks/README.md) for structure.
+Run `/buildframework` to build a framework from any source — a book, podcast, person's teaching, or AI-generated content. Or skip this and coach from first principles.
 
 **4. Run `/start` to begin your first session**
 
 ---
 
-## Three Commands
+## Commands
 
-- **`/onboard`** — Run this once before your first session. Claude interviews you, accepts supporting documents (resume, business plan, job description, etc.), and populates `profile.yaml` and `goals.yaml` — no YAML editing required.
-- **`/start`** — Begin a session. Claude reads all context files, flags overdue commitments, and opens with what needs attention.
-- **`/session`** — Close a session. Walks through capturing everything and updating all files.
+| Command | When to run | What it does |
+|---------|-------------|-------------|
+| `/onboard` | Once, before your first session | Interviews you and populates `profile.yaml` and `goals.yaml`. Accepts supporting documents (CV, business plan, job description, etc.). |
+| `/buildframework` | Any time — optional | Builds or updates your coaching framework from any source: book, podcast, person's teaching, AI-generated content, lesson files. Creates guide files and index. Can add to an existing framework. |
+| `/start` | Start of every session | Reads all context files, flags overdue commitments, opens with what matters most. |
+| `/session` | End of every session | Captures what was discussed, updates goals/profile/accountability/coach-notes. Nothing written without your confirmation. |
 
 ---
 
@@ -53,7 +56,7 @@ Key behaviors:
 
 These files build over time and are read at the start of every session.
 
-#### `profile.yaml`
+#### `core/profile.yaml`
 The most important context file. Tracks everything about you as a founder and person:
 - Background, professional history, and founder story
 - Personality wiring, strengths, gaps, and coaching implications
@@ -64,7 +67,7 @@ The most important context file. Tracks everything about you as a founder and pe
 
 Every entry is dated. Context builds across months, not just sessions.
 
-#### `goals.yaml`
+#### `core/goals.yaml`
 Source of truth for active goals. Tracks:
 - Priority ranking
 - Progress percentage
@@ -74,19 +77,19 @@ Source of truth for active goals. Tracks:
 
 Goals are never silently stalled. If a goal hasn't moved in 14+ days, Claude names it.
 
-#### `accountability.md`
+#### `core/accountability.md`
 Every commitment made in a session lands here with a due date. Checked at the start of every session via `/start`. Nothing slides without being named.
 
 Format: commitment, owner, due date, status (not started / in progress / complete / dropped).
 
-#### `coach-notes.md`
+#### `core/coach-notes.md`
 Claude's private coaching journal. Updated after every session. Contains:
 - **Session entries** — what surfaced, how it was said, what it revealed, what to watch
 - **Overarching patterns** — themes that have appeared across multiple sessions
 
 Written like a coach's private notes, not structured data. This is where coaching insight lives between sessions.
 
-#### `framework-workbook.md` *(optional)*
+#### `frameworks/framework-workbook.md` *(optional)*
 If you're working through a structured coaching program, this file tracks your progress through the workbook questions. Status markers:
 - `[ ]` — not yet addressed
 - `[~]` — discussed, answer in progress
@@ -112,7 +115,7 @@ This is "re-hydrated" at the start of every session via `/start`. It's not store
 
 If you have a structured program, book, or methodology you're working through, drop it into `./frameworks/`. The system supports:
 
-- **A workbook** (`framework-workbook.md`) — questions you work through over time
+- **A workbook** (`frameworks/framework-workbook.md`) — questions you work through over time
 - **Guides** (`frameworks/guides/`) — specific tools, formulas, or cheat sheets Claude uses when a topic arises
 - **A guide index** (`frameworks/guides_index.md`) — lookup table Claude reads to find the right guide
 
@@ -146,8 +149,8 @@ Sessions are the audit trail. The long-term memory files (goals, profile, coach-
 
 #### `/start` — Begin a Session
 
-1. Read `goals.yaml`, `profile.yaml`, `accountability.md`, `coach-notes.md`
-2. Read `framework-workbook.md` if it exists
+1. Read `core/goals.yaml`, `core/profile.yaml`, `core/accountability.md`, `core/coach-notes.md`
+2. Read `frameworks/framework-workbook.md` if it exists
 3. Identify overdue commitments and those due within 7 days
 4. Find the next unanswered workbook questions (if applicable)
 5. Open in 2–4 sentences:
@@ -179,25 +182,27 @@ Nothing gets written to any file without your explicit confirmation ("Y" or "upd
 .
 ├── CLAUDE.md                          # Claude's coaching operating manual
 ├── README.md                          # This file
-├── goals.yaml                         # Active goals and milestones
-├── profile.yaml                       # Your evolving context and history
-├── accountability.md                  # Active commitments with due dates
-├── coach-notes.md                     # Rolling coach journal across sessions
-├── framework-workbook.md              # Optional: workbook questions and answers
+├── core/
+│   ├── profile.yaml                   # Your evolving context and history
+│   ├── goals.yaml                     # Active goals and milestones
+│   ├── accountability.md              # Active commitments with due dates
+│   └── coach-notes.md                 # Rolling coach journal across sessions
 │
 ├── sessions/
 │   └── YYYY-MM-DD.md                  # One file per coaching session
 │
 ├── frameworks/
 │   ├── README.md                      # How to add your own framework
+│   ├── framework-workbook.md          # Optional: workbook questions and answers
 │   ├── guides_index.md                # Optional: lookup table for guides
 │   └── guides/                        # Optional: individual guide files
 │
 └── .claude/
     └── commands/
-        ├── onboard.md                 # /onboard command definition
-        ├── start.md                   # /start command definition
-        └── session.md                 # /session command definition
+        ├── onboard.md                 # /onboard — initial setup interview
+        ├── buildframework.md          # /buildframework — build or update framework
+        ├── start.md                   # /start — begin a session
+        └── session.md                 # /session — close and log a session
 ```
 
 ---
@@ -206,11 +211,11 @@ Nothing gets written to any file without your explicit confirmation ("Y" or "upd
 
 | File | Updated by | Trigger |
 |------|-----------|---------|
-| `goals.yaml` | `/session` Step 2 | Progress discussed, milestone hit, new goal set |
-| `profile.yaml` | `/session` Step 3 | New context, patterns, wins, relationships shared |
-| `accountability.md` | `/session` Step 5 | New commitments made; old ones resolved |
-| `framework-workbook.md` | `/session` Step 2b | Workbook questions answered in session |
-| `coach-notes.md` | `/session` Step 5b | End of every substantive session |
+| `core/goals.yaml` | `/session` Step 2 | Progress discussed, milestone hit, new goal set |
+| `core/profile.yaml` | `/session` Step 3 | New context, patterns, wins, relationships shared |
+| `core/accountability.md` | `/session` Step 5 | New commitments made; old ones resolved |
+| `frameworks/framework-workbook.md` | `/session` Step 2b | Workbook questions answered in session |
+| `core/coach-notes.md` | `/session` Step 5b | End of every substantive session |
 | `sessions/YYYY-MM-DD.md` | `/session` Step 4 | End of every session |
 
 **Nothing is ever written without confirmation.** Claude proposes changes; you approve them.

@@ -7,23 +7,23 @@ You are opening a coaching session. Work through these steps before saying anyth
 ### Step 1: Read the Files
 
 Read all of these now:
-- `./goals.yaml` — current goals and progress
-- `./profile.yaml` — who this person is and their patterns
-- `./accountability.md` — open commitments and due dates
-- `./coach-notes.md` — patterns and observations from previous sessions
+- `./core/goals.yaml` — current goals and progress
+- `./core/profile.yaml` — who this person is and their patterns
+- `./core/accountability.md` — open commitments and due dates
+- `./core/coach-notes.md` — patterns and observations from previous sessions
 
-If `./framework-workbook.md` exists, read it too — find the current position (first section with unanswered questions).
+If `./frameworks/framework-workbook.md` exists, read it too — find the current position (first section with unanswered questions).
 
 ### Step 2: Accountability Check
 
-Review `accountability.md`. Identify:
+Review `./core/accountability.md`. Identify:
 - Any commitments that are overdue (past due date)
 - Any commitments due within the next 7 days
 - Any that were completed since last session
 
 ### Step 3: Workbook Status (if applicable)
 
-If `framework-workbook.md` exists, check it. Note:
+If `./frameworks/framework-workbook.md` exists, check it. Note:
 - The current section (first one with unanswered questions)
 - The next 1–2 unanswered questions in that section
 

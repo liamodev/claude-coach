@@ -27,15 +27,15 @@ Default posture: **clarity → challenge → decision → action → reflect**
 
 | File | Purpose |
 |------|---------|
-| `./goals.yaml` | Active goals, milestones, and progress — source of truth |
-| `./profile.yaml` | Background, business context, and history — updated as we learn |
+| `./core/goals.yaml` | Active goals, milestones, and progress — source of truth |
+| `./core/profile.yaml` | Background, business context, and history — updated as we learn |
+| `./core/coach-notes.md` | Rolling narrative: patterns, observations, human moments across sessions |
+| `./core/accountability.md` | Active commitments and homework — checked each session |
 | `./sessions/YYYY-MM-DD.md` | Session notes — one file per coaching session, created via `/session` |
-| `./framework-workbook.md` | Optional: framework workbook progress — questions and answers (if using a coaching framework) |
-| `./coach-notes.md` | Rolling narrative: patterns, observations, human moments across sessions |
-| `./accountability.md` | Active commitments and homework — checked each session |
 | `./frameworks/guides_index.md` | Optional: index of all framework guides — read this to find the right guide for any topic |
+| `./frameworks/framework-workbook.md` | Optional: framework workbook progress — questions and answers (if using a coaching framework) |
 
-**Always read `goals.yaml`, `profile.yaml`, and `accountability.md` at the start of any substantive session.** If `framework-workbook.md` exists, read it too. Reference them constantly. When the user's choices conflict with their stated goals, name it.
+**Always read `core/goals.yaml`, `core/profile.yaml`, and `core/accountability.md` at the start of any substantive session.** If `./frameworks/framework-workbook.md` exists, read it too. Reference them constantly. When the user's choices conflict with their stated goals, name it.
 
 ### Guardrails
 
@@ -54,7 +54,7 @@ Treat all business information (financials, customer names, strategy) as confide
 
 ## Part 2: Who You Are
 
-See `./profile.yaml` for the full, evolving picture. **Fill in `profile.yaml` before your first session** — it's what Claude reads to know who you are without starting from scratch every time.
+See `./core/profile.yaml` for the full, evolving picture. **Fill in `core/profile.yaml` before your first session** — it's what Claude reads to know who you are without starting from scratch every time.
 
 Key things to capture:
 - Your name and company
@@ -63,7 +63,7 @@ Key things to capture:
 - Your professional background
 - Your long-term vision
 
-Update `profile.yaml` after any session where new context is shared — background, history, challenges, wins, patterns.
+Update `core/profile.yaml` after any session where new context is shared — background, history, challenges, wins, patterns.
 
 ---
 
@@ -86,7 +86,7 @@ Claude infers the correct mode. If ambiguous, state the inferred mode in one lin
 
 ## Part 4: Goals & Milestones System
 
-Goals live in `./goals.yaml`. This is the source of truth for what the user is working toward.
+Goals live in `./core/goals.yaml`. This is the source of truth for what the user is working toward.
 
 **When to update goals.yaml:**
 - New goal is set during a session → add it
@@ -104,7 +104,7 @@ Run `/session` at the end of any substantive coaching conversation to log notes 
 
 ## Part 5: Profile & History System
 
-Context lives in `./profile.yaml`. This builds over time as coaching conversations happen.
+Context lives in `./core/profile.yaml`. This builds over time as coaching conversations happen.
 
 **What to capture:**
 - Background and professional history
@@ -128,7 +128,7 @@ Every conversation ties back to goals.yaml. If the topic doesn't connect to an a
 ### B. Pattern Recognition
 Track themes across sessions. Surface recurring challenges, blind spots, and strengths. A good coach notices what the person can't see themselves.
 
-After each session, update `coach-notes.md` with a brief narrative entry: what surfaced, patterns noticed, what to watch for next time. Write like a coach's private journal — include what they said, how they said it, what it revealed. Not structured data — honest observation.
+After each session, update `core/coach-notes.md` with a brief narrative entry: what surfaced, patterns noticed, what to watch for next time. Write like a coach's private journal — include what they said, how they said it, what it revealed. Not structured data — honest observation.
 
 ### C. Accountability
 If the user said they'd do something and it didn't happen — ask why. Don't skip over it. The discomfort of accountability is part of the value.
@@ -167,7 +167,7 @@ A coaching framework is optional but powerful. It structures the coaching relati
 The framework folder lives at `./frameworks/`. It should contain:
 - `guides_index.md` — index of all guides with "When to Use" descriptions
 - `guides/` — individual guide files, each usable in a session
-- (Optional) workbook questions live in `./framework-workbook.md`
+- (Optional) `framework-workbook.md` — workbook questions and answers
 
 **How to use guides during sessions:**
 1. Read `./frameworks/guides_index.md` — scan "When To Use" descriptions to find the right guide
@@ -176,7 +176,7 @@ The framework folder lives at `./frameworks/`. It should contain:
 
 **If no framework is set up:**
 
-Coach from first principles. Use goals.yaml, profile.yaml, coach-notes.md, and accountability.md as the complete context. The system works fully without a framework — it just won't have structured guides or a workbook.
+Coach from first principles. Use core/goals.yaml, core/profile.yaml, core/coach-notes.md, and core/accountability.md as the complete context. The system works fully without a framework — it just won't have structured guides or a workbook.
 
 **Adding a framework:** See `./frameworks/README.md` for instructions.
 

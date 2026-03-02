@@ -11,7 +11,7 @@ This folder is where your coaching framework lives — the program, book, or met
 Without a framework, Claude coaches from first principles using your goals, profile, and session history.
 
 With a framework, Claude also has:
-- **Structured questions** it works through with you over time (via `framework-workbook.md`)
+- **Structured questions** it works through with you over time (via `frameworks/framework-workbook.md`)
 - **Specific guides or tools** it can pull into sessions when a topic surfaces (e.g. a confidence formula, a goal-setting template, a decision filter)
 - **A sequenced arc** — the framework's progression becomes the arc of the coaching relationship
 
@@ -88,9 +88,9 @@ Claude reads this index first, then reads the specific guide file, then coaches 
 
 ## Step 3: Set Up the Workbook (optional)
 
-If your framework has workbook questions — exercises meant to be answered progressively over time — add them to `framework-workbook.md` in the **root folder** (not here in frameworks/).
+If your framework has workbook questions — exercises meant to be answered progressively over time — add them to `framework-workbook.md` in this folder (`frameworks/framework-workbook.md`).
 
-See the template in `framework-workbook.md` for the question/answer format.
+See the template in [framework-workbook.md](framework-workbook.md) for the question/answer format.
 
 ---
 
