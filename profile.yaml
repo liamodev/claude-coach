@@ -1,0 +1,232 @@
+# profile.yaml — Liam OBrien: Context & History
+#
+# This file builds over time. Updated after coaching sessions
+# as new context is shared. All entries dated for temporal context.
+#
+# Purpose: Give future Claude instances enough background to coach
+# effectively without starting from zero.
+
+last_updated: "2026-02-26-3"
+
+identity:
+  name: "Liam OBrien"
+  location: "Redding CA USA"
+  email_work: "liam@altitude7.com"
+
+company:
+  name: "Altitude 7"
+  website: "https://www.altitude7.com/"
+  what_we_do: "Develop AI strategies for corporations that improve EBITDA"
+  focus: "Improved operational efficiency"
+  stage: "Early-stage startup"
+  founded: "Australia 2015, USA Jan 2026"
+  current_focus: "Establishing first US customer base, Q1 2026"
+
+background:
+  entries:
+    - note: "Harvard Business School graduate — has access to HBS alumni network, underutilized as of 2026-02-25"
+      date: "2026-02-25"
+    - note: "Long career in technology, primarily financial services — broker dealers, investment managers, hedge funds"
+      date: "2026-02-25"
+    - note: "Significant professional history in Australia & Asia — had Morgan Stanley Hong Kong relationships that have since been leveraged to open SF/NY connections"
+      date: "2026-02-25"
+    - note: "Altitude 7 has ~10 years of history in Australia/Asia, advisory and consulting work for major fintech companies"
+      date: "2026-02-25"
+    - note: "Took a detour into digital marketing — his words: 'square peg in a round hole.' Stepped back and returned to Altitude 7 / tech/AI consulting in 2026, which is his natural domain"
+      date: "2026-02-25"
+    - note: "Moved to US in 2021 (not recently). Had Australian revenue flowing initially so wasn't pushed to build US pipeline. Took 2023-2024 off for ministry school — met wife there. Returned to Altitude 7 / AI focus in 2025-onwards."
+      date: "2026-02-25"
+    - note: "BidPixel co-founder experience (digital marketing/ecommerce agency): confirmed square-peg pattern. Was directionally right on video and data science theses but ended up in marketing execution, which drained him. Core lesson: stay in finance/tech/strategy lane."
+      date: "2026-02-25"
+    - note: "Attended Keith Cunningham's 4-Day MBA program in person — not just read The Road Less Stupid. Has lived experience with the thinking time methodology, not theoretical familiarity."
+      date: "2026-02-27"
+    - note: "Wife gave 12 months (from ~May 2025, when he left BidPixel) to build US business traction. Deadline is ~May 2026. That 12 months was largely consumed by: dad passing end of 2025, multiple Australia trips, relocation from Colorado to California, house sale and remodel in Colorado, miscarriage early 2026. Effective focused work began January 2026."
+      date: "2026-02-28"
+    - note: "Previous interview experience: reached 3rd/4th round at DA Davidson (AI consultant role) and Charles Hoskinson family office (AI consultant) — neither converted. Pattern: late-stage interview experience exists but hasn't closed."
+      date: "2026-02-28"
+    - note: "EAD approved, LLC incorporated January 2026. No restrictions on US income or business activity."
+      date: "2026-02-25"
+
+patterns:
+  strengths:
+    - observation: "Self-aware about fit — recognized the digital marketing detour wasn't right and course-corrected"
+      first_noted: "2026-02-25"
+      recurrence_count: 1
+    - observation: "Honest about current state — stated zero revenue, zero customers without spin. That clarity is an asset."
+      first_noted: "2026-02-25"
+      recurrence_count: 1
+    - observation: "Defaults to analysis over action when uncertain — produces high-quality research (e.g. 28-page structural fragility report) but can use it as productive procrastination instead of having conversations. Named and acknowledged 2026-02-25."
+      first_noted: "2026-02-25"
+      recurrence_count: 1
+    - observation: "Offer confidence gap — wants the pitch fully formed before reaching out. Pattern: 'the offer doesn't feel ready' as a reason to delay. Reframe needed: conversations ARE the research."
+      first_noted: "2026-02-25"
+      recurrence_count: 1
+    - observation: "His advice to others maps directly onto his own limiting factors — he knows exactly what he needs, framed as counsel to someone else. High self-awareness, inconsistently applied."
+      first_noted: "2026-02-26"
+      recurrence_count: 1
+    - observation: "Genuinely enjoys presenting and helping people find solutions — not a performed skill, a real source of energy. Distinct from 'sales' which he fears. Frame presenting/consulting as his natural mode, not as a stretch."
+      first_noted: "2026-02-26"
+      recurrence_count: 1
+    - observation: "Wisdom named as the deepest destination (Filter 12, 2026-02-27) — not impact, not legacy in the generic sense, but wisdom that outlasts individuals and reshapes what is possible for generations. Lee Kuan Yew, Jesus Christ, King Solomon cited as exemplars. The common thread: wisdom is unquestionable in its permanence. More precise articulation than any previous session."
+      first_noted: "2026-02-27"
+      recurrence_count: 1
+  blind_spots:
+    - observation: "Analysis paralysis — Deliberative (#9) + Analytical (#3) wiring means he wants certainty before moving. Manifests as 'the offer isn't ready' instead of having conversations."
+      first_noted: "2026-02-25"
+    - observation: "Low adaptability (34th/last) — needs systems and structure to manage change; ambiguity is uncomfortable and can cause stalling"
+      first_noted: "2026-02-25"
+    - observation: "Low Woo (#31) and Communication (#33) — doesn't sell through charm or volume. Needs to lean into depth and trust-building, not broadcast outreach."
+      first_noted: "2026-02-25"
+    - observation: "Self-doubt roots not in capability but in navigational uncertainty — 'is this the best next step?' Deliberative + Strategic wiring creates infinite path analysis. Coaching move: 'good enough next step' replaces 'optimal next step.'"
+      first_noted: "2026-02-26"
+    - observation: "Fear of mistakes framed as 'going backwards' — feels regression, not data. Keeps him over-researching to avoid the feeling of regress. Reframe offered: mistakes are price of attempting something real."
+      first_noted: "2026-02-26"
+    - observation: "Evidence-based conviction — holds positions based on research, updates genuinely on better evidence. Not ego-protection. Strong asset at the sovereign fund / advisory level."
+      first_noted: "2026-02-26"
+    - observation: "Self-prescribed antidote to navigational uncertainty (Q29, 2026-02-26): 'Listen to my heart, follow only a few people who have done what I need to do.' Not research — internal conviction + curated mentorship. First time stated explicitly."
+      first_noted: "2026-02-26"
+    - observation: "Systemize/outsource instinct activates before proving the process himself — when he sees something that works, he moves quickly to build a system around it. Can function as productive-feeling avoidance of doing the uncomfortable thing (outreach, direct action) himself first."
+      first_noted: "2026-02-26"
+    - observation: "'Building vs doing' tension — named explicitly and unprompted by Liam himself (2026-02-27). He knows he gets absorbed in building mode as a productive-feeling alternative to outreach. Self-awareness is functional; behavior change is the test. Watch for agent-building projects consuming time that should go to direct outreach."
+      first_noted: "2026-02-27"
+    - observation: "HBS alumni network practical constraint: outreach is private messages only, one by one — cannot email blast. Affects how this channel can be worked."
+      first_noted: "2026-02-27"
+    - observation: "High-value relationships surface casually and sit idle. Boston PE partner (done this at scale) and GIC contact (30 years at one of the world's largest sovereign wealth funds) were both mentioned in passing — neither had been actively cultivated. Pattern: identifies the right people, delays the outreach. Watch for this across all relationship categories. Counter-data point (2026-02-28): both Tom (Baypine) and Tung (GIC) activated in the same week without delay — first evidence the pattern can be broken."
+      first_noted: "2026-02-26"
+      recurrence_count: 1
+
+wiring:
+  source: "CliftonStrengths + Ray Dalio Principles You Assessment"
+  archetype: "The Planner-Strategist — systematic thinker who builds structured plans, analyzes data, identifies optimal pathways. Restorative problem-solver."
+  top_strengths:
+    - "Relator (#1) — deep, authentic one-on-one relationships. Not a networker. A trust-builder. Sells through depth, not volume."
+    - "Strategic (#2) — creates alternative pathways, spots patterns others miss"
+    - "Analytical (#3) — searches for reasons and causes, thinks through all factors. Treats problems like systems."
+    - "Focus (#4) — prioritizes and follows through. Needs clear goals or drifts."
+    - "Discipline (#5) — creates order, structure, routine. Systems are natural."
+    - "Significance (#6) — needs work that matters. Mediocrity is demotivating."
+    - "Deliberative (#9) — anticipates obstacles, serious care in decisions. Assets: thoroughness. Risk: slow."
+    - "Restorative (#10) — energized by fixing broken things. Turnaround environments suit him."
+  key_gaps:
+    - "Adaptability: 34th (dead last) — struggles with ambiguity; needs systems to manage change"
+    - "Communication: 33rd — brilliant analysis can fail to land; delivery needs deliberate attention"
+    - "Woo: 31st — does not sell through charm or broad networking. Peer credibility is his sales motion."
+    - "Empathy: 26th — reads situations analytically not emotionally. Should partner with empathetic people for client warmth."
+    - "Humor: 11% — naturally serious. Don't force it."
+  dalio_scores:
+    deliberative_thinking: "92%"
+    detail_reliability: "94%"
+    composure: "85%"
+    determination: "78%"
+    extraversion: "44% (moderate — small groups, not crowds)"
+    nurturing: "20% (very low)"
+  coaching_implications:
+    - "Frame sales as discovery/research — plays to Analytical + Deliberative strengths. Removes the identity clash with 'salesperson'."
+    - "Pipeline needs explicit systems (CRM, scheduled follow-ups) — won't happen organically"
+    - "Set decision deadlines in every session — Deliberative can loop indefinitely without forcing function"
+    - "Composure under pressure is a genuine asset — handle adversity without breaking. Remind him of this in hard moments."
+    - "Needs work that feels significant — tie every action back to the long-term vision or motivation drops"
+
+wins:
+  entries:
+    - win: "Built Altitude 7 over ~10 years in Australia/Asia with a few major fintech clients as advisory/consulting engagements"
+      date: "2026-02-25"
+      context: "Founding session — establishing baseline"
+    - win: "Built and deployed conversational voice AI for Jewish House (Australia) — 70+ staff hours saved in first 6 weeks. Handles room pin code validation via AI identity verification."
+      date: "2026-02-25"
+      context: "Real proof-of-work case study; underutilised in outreach as of this date"
+    - win: "Produced with deep AI research a 28-page Structural Fragility Report (Feb 2026) synthesising 15+ primary sources on US systemic risk — demonstrates depth of macro analytical capability relevant to investment manager ICP"
+      date: "2026-02-25"
+      context: "Identified as primary conversation-opener for Morgan Stanley and investment manager outreach"
+    - win: "Built 'Meeting Buddy' — real-time AI second brain active in every call. Processes 20 seconds of conversation at a time, evaluates against meeting outcome, surfaces coaching questions live. Used in every Zoom and phone call. Genuinely differentiated — most consultants don't have this."
+      date: "2026-02-27"
+      context: "Built from 'practice what you preach' tension. Owned case study of agentic AI in real business use."
+    - win: "Building 'agent that builds agents' — alpha stage. Reads email context, does autonomous research, prepares briefings, builds other AI agents. Positions Altitude 7 as genuinely living what it sells."
+      date: "2026-02-27"
+      context: "Driven by internal pressure to use AI before recommending it to clients."
+
+challenges:
+  entries:
+    - challenge: "US standing start — no network, no revenue, no customers as of LLC incorporation (~January 2026)"
+      raised: "2026-02-25"
+      resolved: null
+      resolution: null
+
+financial:
+  as_of: "2026-02-25"
+  deployable_capital: "~$40,000 USD (willing to deploy now)"
+  total_buffer: "~$90,000 USD total — treat $40k as operating capital, $50k as true emergency buffer"
+  monthly_income: "~$7,000 USD/month from Australian-based consulting (stable as of Feb 2026)"
+  us_revenue: "$0 as of end of February 2026"
+  travel_budget: "Willing to travel up to 4-5 days/month — hard constraint given family"
+  runway_note: "Australian income provides meaningful runway. Not in distress. But first US revenue matters for confidence and trajectory, not just survival."
+
+personal:
+  entries:
+    - note: "Miscarriage early 2026. February largely consumed supporting wife emotionally and practically (meals, shopping, emotional support for several weeks). Plans to try again. This was the primary reason February business activity stalled — the right call."
+      date: "2026-02-25"
+    - note: "Schwab Director role: wife not yet briefed on 75% travel component. Liam wants facts from call first (average %, West Coast vs. national split), then full conversation with wife. That conversation must happen before any decision is made."
+      date: "2026-02-28"
+    - note: "Wife wants to live in Orange County near her family (beach, family proximity). Currently can't afford OC on Redding income. A high-income role or US revenue growth would enable the relocation she wants."
+      date: "2026-02-26"
+    - note: "Travel constraint clarification: 4-5 days/month was stated as an ideal max, not a hard family limit. Wife's comfort with travel is negotiable in context — financial stability and OC relocation could offset it."
+      date: "2026-02-26"
+    - note: "Wife travel conversation (2026-03-01): framed as 'this is what building any consulting firm requires' with examples of friends' husbands who travel for work. Received better than expected — no major resistance. Specific travel % (75%) not yet disclosed; waiting for call details before completing that conversation."
+      date: "2026-03-01"
+    - note: "Redding context (corrected 2026-03-01): Redding was a mutual decision — not a compromise she resents. She has family there (brother, sister-in-law, young niece she adores), plus mutual ministry school friends from where she and Liam met. She felt her season in OC had closed. Cost of living also a factor. She is not socially isolated — the prior framing was incorrect."
+      date: "2026-03-01"
+    - note: "Marriage dynamic (2026-03-01): wife experiences love and connection primarily through extended emotional conversation — her model is the long, unhurried, heart-sharing rhythm she has with close girlfriends. She wants that with Liam daily. He has tried encouraging her to build more community but it hasn't worked. This is a direct dynamic issue, not a social isolation issue. Committed to 30-min daily intentional time with wife: phone away, full presence, she leads. This will require deliberate effort given his low Empathy/Nurturing wiring."
+      date: "2026-03-01"
+    - note: "Articulated 'beloved identity' as his own antidote to self-doubt — knowing who God says he is as the foundation for moving. Faith is not just background; it's his operating system. Came up unprompted in Destiny workbook Q9."
+      date: "2026-02-26"
+
+key_relationships:
+  entries:
+    - name: "Morgan Stanley — Support Division (SF/NY)"
+      role: "Passive referral source"
+      context: "Liam is on their roster for hedge fund clients asking about AI. Relationship came via Morgan Stanley Hong Kong connections. Weekly email contact maintained. No leads generated yet as of 2026-02-25. Passive — referrals at their discretion only."
+      added: "2026-02-25"
+    - name: "Tung"
+      role: "Retired — former Government of Singapore Investment Corporation (GIC)"
+      context: "Personal friend of Liam's. Former GIC. 'There's always more capital than opportunities' — told Liam this directly. Has extensive institutional network. In active back-and-forth as of 2026-02-28. Call being scheduled — US/Singapore timezone coordination in progress. Coached on peer framing: share full arc (consulting now + investment firm long-term), get his honest macro read, leave with 2 specific names. Don't lead with an ask — let the vision do the work. Potential value: capital partner referral, institutional door-opener, advisor on deal structure."
+      added: "2026-02-26"
+      last_contact: "2026-02-28"
+    - name: "Gabriel (DigiReps.co)"
+      role: "Appointment setter — potential future hire"
+      context: "Cold called Liam; first appointment setter in 20+ years to genuinely impress him. Works for DigiReps.co. Liam expressed interest if he becomes available. Hold for warm follow-up role once March outreach sequence is proven. ICP fit (investment managers) unconfirmed."
+      added: "2026-02-26"
+
+vision:
+  long_term: "International investment firm, Asia-focused, likely headquartered in Singapore. $100B+ AUM generating steady returns across all economic environments. Technology/data/AI-centric, investing across listed equities, PE, commodities, debt, credit, digital assets, real estate. Clients: HNW, family offices, pension funds, sovereign wealth funds. Strategic advisors to GIC, QIA, ADIA, NBIM, CIC."
+  purpose: "Prosperity for nations — help families, firms, cities, and countries deploy capital more intelligently so GDP, employment, and real outcomes rise. Not zero-sum wealth extraction."
+  love_as_engine: "Articulated 2026-02-26: the business is the vehicle, love is the engine. Family is the greatest legacy — wife alongside him, children who know they were loved and chosen. The macro investment thesis connects directly to human flourishing: when nations prosper, the daughters of poverty are no longer destined for trafficking or slavery — they too can dream. That is the real why underneath the strategy."
+  people_admired:
+    - "Lee Kuan Yew — nation-building through disciplined, long-term thinking; personal north star, not just a reference"
+    - "Peter Daniels (Australia) — faith-driven entrepreneur and philanthropist"
+    - "Keith Cunningham — business strategy and thinking; referenced for 'prime time thinking' principle; attended 4-Day MBA in person"
+    - "Howard Marks — second-level thinking; reads his memos closely; Warren Buffett stops to read them"
+  faith: "Faith is foundational to Liam's identity — not performative. Ministry school (2022-2023) was formative. Purpose and integrity are inseparable from his business direction. His identity is rooted here before anything else."
+  current_vehicle: "Altitude 7 — AI strategy consulting for investment managers. The stepping stone, not the destination."
+  noted: "2026-02-25"
+
+fit_check:
+  description: "Liam's stated rubric for evaluating any opportunity. Must score ≥4/5 on all five. If any item <4, pause or redesign the engagement."
+  criteria:
+    - "North Star: moves capital from worse to better use; ties to prosperity and GDP growth"
+    - "Strengths leverage: uses core strengths (technology, strategic, analytical, finance/AI/governance)"
+    - "Regime & process: lets him apply regime awareness and ship process alpha"
+    - "Agency & evidence: gives data access and authority to deliver measurable outcomes within ~16 weeks"
+    - "Ethics & boundaries: decision-support not unlicensed advice; sound data rights; no predatory models"
+  energy_drains:
+    - "Generic marketing or brand services"
+    - "Pure short-term trading P&L divorced from real-economy outcomes"
+    - "Compliance-only mandates with no agency or data access"
+    - "Roles requiring constant networking, entertaining, or social performance"
+
+positioning:
+  niche: "AI-enabled investment operations — where deep finance domain expertise + AI architecture + governance creates differentiated value that pure technologists cannot replicate"
+  differentiator: "Most AI implementations fail because builders don't understand risk, or risk officers can't build. Liam bridges this — operator (CRO/COO at eToro/Gleneagle), engineer (agentic RAG, multi-agent workflows), and strategist (HBS, expert witness)."
+  signature_language: "process alpha | regime-aware | agents as staff augmentation | safe & explainable | from weeks to hours | governance that enables speed"
+  icp_committed: "Investment managers and PE firms — committed 2026-02-25. Target buyers: PE operating partners, CIOs, COOs at asset managers, family offices, hedge funds."
+  icp_dropped: "Local/SMB businesses (e.g. MAAS Energy) — wrong lane, wrong buyer, wrong sales motion for his wiring"
+  macro_thesis: "Economic contraction is higher probability than mainstream pricing reflects. Services that help investment managers reduce OpEx, manage counterparty risk, and improve EBITDA are more valuable in contraction than in expansion. This is the tailwind, not a headwind."

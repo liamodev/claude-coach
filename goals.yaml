@@ -1,0 +1,43 @@
+# goals.yaml — Business Goals & Milestones
+#
+# Source of truth for what Liam is working toward.
+# Claude references this constantly to keep work aligned with stated priorities.
+#
+# Progress: 0.0 to 100.0
+# Status: on_track | at_risk | behind | complete | paused
+#
+# Update after every session where goals or milestones are discussed.
+# Always date milestone completions.
+
+last_updated: "2026-02-26-7"
+
+business:
+  - name: "First US Customers"
+    description: "Generate the first $5,000 in revenue from US customers"
+    priority: 1
+    quarter: "Q1 2026"
+    key_results:
+      - result: "LLC setup"
+        due: "2026-01-31"
+        status: complete
+        completed_on: "2026-01-20"
+      - result: "Engaged conversations with 10 potential customers"
+        due: "2026-02-28"
+        status: at_risk
+      - result: "$5,000 in revenue from US customers"
+        due: "2026-03-31"
+        status: in_progress
+    progress: 25.0
+    status: "on_track"
+    notes: "February ended at $0 US revenue, 0 engaged conversations. Primary cause: miscarriage + 2 weeks supporting wife, plus channel confusion (undecided on outreach approach). March 31 is the hard deadline — no more extensions. 90-day plan rule adopted: execute without pivoting. Three outreach commitments locked: full address book sweep (Mar 7), HBS alumni 20+ messages (Mar 14), first AI newsletter (Mar 10). ICP: investment managers and PE firms. Schwab Director role upgraded to active pursuit (2026-02-28): call scheduled Mar 10-12. Strategic rationale confirmed — same consulting work (tech stack review, AI/automation advisory) with warm RIA relationships handed to him and $230K salary. Not a detour from consulting identity; embedded market research. If offer lands: wind down active outreach, keep newsletter light/monthly, 2-year max with trigger-based exit (product opportunity, key relationship ready to convert, or RIA firm opportunity). Nothing in current plan stops until signed offer. Strategic arc clarified 2026-02-26: consulting is a stepping stone and deal sourcing pipeline — not the end goal. Target: majority stake in portfolio of companies doing $30M+ combined revenue within 4 years, via AI-transformation turnaround / PE-style acquisition. Both high-value relationships now activated (2026-02-28): Tom (Baypine) — peer thesis note sent with macro outlook; Tung (GIC retired) — call being scheduled."
+    last_discussed: "2026-02-26"
+
+personal:
+  - name: "Develop EQ Skills"
+    description: "Build emotional intelligence as a founder and leader"
+    priority: 1
+    key_results: []
+    progress: 10.0
+    status: "on_track"
+    notes: ""
+    last_discussed: "2026-02-25"
