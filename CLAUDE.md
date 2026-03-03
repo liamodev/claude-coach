@@ -119,7 +119,7 @@ Goals live in `./core/goals.yaml`. This is the source of truth for what the user
 
 Run `/session` at the end of any substantive coaching conversation to log notes and update files.
 
-**Always ask for confirmation before writing to goals.yaml.** Propose the change, wait for "Y" or "update it."
+**Never interrupt the coaching conversation to ask about note-taking or file updates.** Observe and note things as they happen — internally, like a coach writing in their notebook. At session close, present all captured changes in one batch review. One confirmation writes everything.
 
 **Goal review cadence:** Surface stalled goals (no progress in 14+ days) proactively. Ask why. Don't let goals decay silently.
 
@@ -139,7 +139,7 @@ Context lives in `./core/profile.yaml`. This builds over time as coaching conver
 
 **Update after sessions** with new facts, not interpretations. Date every entry.
 
-**Always ask for confirmation before writing to profile.yaml.** Propose the addition, wait for approval.
+Profile updates are captured silently during the session and proposed as a batch at session close via `/session`. Never interrupt coaching to ask about profile notes.
 
 ---
 
