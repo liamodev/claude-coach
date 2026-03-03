@@ -17,6 +17,17 @@ Review the conversation and extract:
 - **Commitments / action items** (what the user said they'd do, with any deadlines)
 - **Questions left open** (unresolved threads worth returning to)
 
+### Step 1b: Wins & Gains
+
+Before logging anything else, surface and anchor any wins from this session or since last session.
+
+- **Name the win explicitly** — don't let it stay implicit or rush past it
+- **Ask the identity question**: "What does this tell you about who you are?" Capture their answer.
+- **Propose adding to profile.yaml** wins section with `identity_reveal` field: `{ win: "...", date: "YYYY-MM-DD", context: "...", identity_reveal: "..." }`
+- If they brushed past a win during the session, return to it now: "I want to go back to [X] — that was a real win. What does it mean to you?"
+
+Wait for confirmation before writing to profile.yaml.
+
 ### Step 2: Goals Update
 
 Read `./core/goals.yaml`. Identify any updates needed:
@@ -38,10 +49,14 @@ If `./frameworks/framework-workbook.md` exists and any workbook questions were c
 
 Read `./core/profile.yaml`. Identify anything worth capturing:
 - New background context shared
-- A pattern observed (strength or blind spot)
-- A win to record
+- A pattern observed (strength or blind spot) — include `recurrence_count` if this has surfaced before
+- A win to record — **always include `identity_reveal`**: what this win says about who they are (captured in Step 1b; carry it forward here)
+- A belief surfaced — limiting or empowering — add to `beliefs` section with `status: active/shifting/resolved`
+- A values clarification — update `values.core` if any were named or confirmed
+- A self-concept shift — update `self_concept.current` or `self_concept.emerging`
 - A challenge raised
 - A key relationship mentioned
+- Energy patterns observed — update `energy` section if relevant
 
 Propose additions. Wait for confirmation before writing.
 

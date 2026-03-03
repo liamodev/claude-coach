@@ -22,6 +22,25 @@ company:
   stage: ""                 # e.g. idea, pre-revenue, early-stage, scaling
   founded: ""
 
+self_concept:
+  current: ""              # How they see themselves now — their current identity
+  emerging: ""             # Who they are becoming — "I am the kind of person who..."
+  as_of: ""
+  # coaching_contract: ""  # How they want to be challenged; what to never let them off the hook for
+
+values:
+  core: []                 # e.g. [integrity, autonomy, impact, growth, family]
+  as_of: ""
+  notes: ""                # What these values mean to them in practice
+
+beliefs:
+  limiting:
+    # Format: { belief: "...", first_noted: "YYYY-MM-DD", status: "active/shifting/resolved" }
+    # e.g. { belief: "I'm not ready to lead a team yet", first_noted: "2026-01-01", status: "active" }
+  empowering:
+    # Format: { belief: "...", first_noted: "YYYY-MM-DD" }
+    # e.g. { belief: "I figure things out when I commit fully", first_noted: "2026-01-01" }
+
 background:
   entries:
     # Add professional history, career highlights, relevant context
@@ -31,7 +50,10 @@ patterns:
   strengths:
     # Format: { observation: "...", first_noted: "YYYY-MM-DD", recurrence_count: 1 }
   blind_spots:
-    # Format: { observation: "...", first_noted: "YYYY-MM-DD" }
+    # Format: { observation: "...", first_noted: "YYYY-MM-DD", recurrence_count: 1 }
+  recurring_themes:
+    # What keeps surfacing across sessions — deeper than individual strengths/blind spots
+    # Format: { theme: "...", first_noted: "YYYY-MM-DD", sessions_count: 1 }
 
 wiring:
   # Optional: personality assessments (CliftonStrengths, DISC, Dalio, etc.)
@@ -41,9 +63,15 @@ wiring:
   # key_gaps: []
   # coaching_implications: []
 
+energy:
+  energizers: []           # What gives energy and momentum
+  drains: []               # What depletes energy
+  peak_time: ""            # When they do their best thinking / work
+
 wins:
   entries:
-    # Format: { win: "...", date: "YYYY-MM-DD", context: "..." }
+    # Format: { win: "...", date: "YYYY-MM-DD", context: "...", identity_reveal: "..." }
+    # identity_reveal: what this win says about who they are — "This shows I'm someone who..."
 
 challenges:
   entries:
@@ -63,6 +91,7 @@ personal:
 key_relationships:
   entries:
     # Format: { name: "...", role: "...", context: "...", added: "YYYY-MM-DD" }
+    # Include: people who influence decisions, sources of support, sources of drag
 
 vision:
   long_term: ""
