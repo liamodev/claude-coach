@@ -1,22 +1,68 @@
-# Claude Code Coaching Agent
+# Claude Coach
 
-A structured coaching operating system built on [Claude Code](https://claude.ai/code). Drop in your own coaching framework, or use it without one.
+*Built by [Liam O'Brien](https://www.linkedin.com/in/liam-obrien/) · [X](https://x.com/liamlive) · [GitHub](https://github.com/liamodev/) · [Altitude7](https://www.altitude7.com/)*
 
-Claude operates as a **coach** — not an assistant. It challenges thinking, surfaces uncomfortable truths, holds you accountable, tracks patterns across sessions, and coaches at the identity level — not just the tactical level.
+---
+
+> *"After a dozen sessions, it surfaced a pattern I'd been blind to for months. It had been watching. It remembered everything."*
+
+A coaching agent built on [Claude Code](https://claude.ai/code). It remembers everything. It holds you accountable. It coaches at the identity level — not just tactics.
+
+**Not a chatbot. A coach.**
+
+---
+
+## Why This Exists
+
+Ask any AI for coaching and you'll get frameworks, bullet points, and validation. It won't remember what you said last week. It won't notice you've avoided the same conversation three times. It won't ask why you're still not doing the thing you said mattered most.
+
+Claude Coach was built to change that.
+
+Every session reads your goals, your profile, your coaching history, and your open commitments. It doesn't start from zero. It doesn't forget. It builds a model of who you are across months — your blind spots, your patterns, your values, your limiting beliefs — and uses that to coach you, not interrogate you.
+
+The accountability is structural. Commitments live in a file with due dates. They surface at the start of every session. There's no friction-free way to let something slide.
+
+---
+
+## See It in Action
+
+**Mobile tip:** Start a session on desktop, then run `/remote` — Claude Code serves it over your local network. Use speech-to-text on your phone to coach on the go. No app needed.
+
+> Demo GIF coming soon — contributions welcome.
+
+---
+
+## Prerequisites
+
+You need [Claude Code](https://claude.ai/code) installed.
+
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+
+That's it. Claude Code is Anthropic's official CLI — it runs Claude in your terminal with access to your local files, which is what gives this system its persistent memory.
 
 ---
 
 ## Quick Start
 
-**1. Open this folder in Claude Code**
+**1. Clone this repo and open the folder in Claude Code**
+
+```bash
+git clone https://github.com/YOUR_USERNAME/claude-coach.git
+cd claude-coach
+claude
+```
 
 **2. Run `/onboard`**
 
-Claude will interview you and populate `profile.yaml` and `goals.yaml` for you. Have any supporting documents ready to paste (resume, business plan, job description — whatever's relevant).
+Claude interviews you and populates `profile.yaml` and `goals.yaml`. Have any supporting context ready to paste — resume, business plan, job description, whatever's relevant. Takes about 10 minutes.
 
-**3. (Optional) Build a coaching framework**
+**3. (Optional) Activate the example framework**
 
-Run `/buildframework` to build a framework from any source — a book, podcast, person's teaching, or AI-generated content. Or skip this and coach from first principles.
+An original Founder Clarity Framework is included at `frameworks/example-founder-clarity/`. It covers vision, decision-making, energy, and beliefs — ready to use immediately.
+
+To activate: copy the contents up to `frameworks/` per the instructions in `frameworks/example-founder-clarity/README.md`. Or build your own with `/buildframework`.
 
 **4. Run `/start` to begin your first session**
 
@@ -26,132 +72,109 @@ Run `/buildframework` to build a framework from any source — a book, podcast, 
 
 | Command | When to run | What it does |
 |---------|-------------|-------------|
-| `/onboard` | Once, before your first session | Conducts a structured interview and populates `profile.yaml` and `goals.yaml`. Captures identity, values, beliefs, vision, goals, challenges, and coaching contract. Accepts supporting documents. |
-| `/buildframework` | Any time — optional | Builds or updates your coaching framework from any source: book, podcast, person's teaching, AI-generated content, lesson files. Creates guide files and index. Can add to an existing framework. |
-| `/start` | Start of every session | Reads all context files including the coaching methodology. Opens with a check-in, surfaces a win, then flags accountability. |
+| `/onboard` | Once, before your first session | Structured interview — populates `profile.yaml` and `goals.yaml`. Captures identity, values, beliefs, vision, goals, challenges, and your coaching contract. |
+| `/buildframework` | Any time — optional | Builds a coaching framework from any source: book, podcast, methodology, AI-generated content. Creates guide files and an index. Can extend an existing framework. |
+| `/start` | Every session | Reads all context files. Opens with check-in, surfaces a win, flags overdue accountability. |
 | `/session` | End of every session | Captures insights, anchors wins to identity, updates goals/profile/accountability/coach-notes. Nothing written without your confirmation. |
 
 ---
 
-## How the System Works
+## How the Memory Works
 
 This is a seven-layer system. Each layer feeds the next.
 
 ### Layer 0 — Coaching Methodology (`mastercoach/MasterCoach.md`)
 
-`mastercoach/MasterCoach.md` is the foundational coaching standard. It defines how to coach — the philosophy, skills, and methodology that every session runs on. Read at the start of every session. **Do not modify during sessions.**
+The foundational standard. Defines how to coach — philosophy, methodology, skills. Read at the start of every session. Not improvised; it's a standard.
 
-Key principles embedded in this document:
+Key principles:
 - The client is not broken — whole, capable, and resourceful
 - Identity-level > behavior-level (behavior change is temporary; identity change is permanent)
-- Level 3 Listening — what's NOT said matters as much as what is
+- Level 3 Listening — what's *not* said matters as much as what is
 - The Champion/Challenger dial — calibrated precisely, not flat pressure
-- Wins & Gains — high achievers skip this; the coach interrupts that pattern
-- Systems thinking — the client exists within a system, not in isolation
+- Wins & Gains — high achievers skip this; the system interrupts that pattern
 - Make yourself obsolete — build self-coaching capacity over time
 
 ---
 
 ### Layer 1 — Operating Rules (`CLAUDE.md`)
 
-`CLAUDE.md` is Claude's operating manual. It defines the coaching role, guardrails, how to handle goals and profile updates, coaching modes, and always-on responsibilities. It embeds the key principles from `MasterCoach.md` so they're always active.
+Claude's coaching manual. Defines role, guardrails, coaching modes, and always-on responsibilities. Embeds the core principles so they're active every session.
 
-Key behaviors:
 - Default posture: **Awareness → Restructuring → Commitment & Capacity**
-- Coaching modes (Strategy, Accountability, Problem-Solve, Reflect, Explore, Plan) — inferred automatically
-- Champion/Challenger dial — not flat "push hard"; calibrated to what the client needs
-- Max 3 clarifying questions; recommendation over neutral summary
-- Surface stalled goals (no progress in 14+ days) proactively
+- Six coaching modes inferred automatically (Strategy, Accountability, Problem-Solve, Reflect, Explore, Plan)
+- Champion/Challenger dial — reads the situation, doesn't just "push hard"
+- Stalled goals (14+ days no movement) surfaced proactively — not silently decayed
 
 **Explore mode** suspends the challenge mandate. Invoke with *"explore"* or *"just thinking out loud."*
 
 ---
 
-### Layer 2 — Long-Term Memory (Persistent Files)
+### Layer 2 — Long-Term Memory
 
-These files build over time and are read at the start of every session.
+These files build over time. Read at the start of every session.
 
-#### `core/profile.yaml`
-The heartbeat of the system. What makes coaching feel like a real coach who knows their client. Tracks:
+#### `core/profile.yaml` — The heartbeat of the system
+
+What makes this feel like a real coach who knows their client. Tracks:
 - **Identity** — name, location, timezone
 - **Self-concept** — current identity and emerging identity ("I am the kind of person who...")
 - **Values** — core values and what they mean in practice
-- **Beliefs** — limiting beliefs (with active/shifting/resolved status) and empowering beliefs being built
+- **Beliefs** — limiting beliefs (active/shifting/resolved) and empowering beliefs being built
 - **Background** — professional history, founder story, career context
-- **Patterns** — strengths, blind spots (both with recurrence count), and recurring themes across sessions
+- **Patterns** — strengths, blind spots (with recurrence count), recurring themes across sessions
 - **Wiring** — personality assessments (CliftonStrengths, DISC, Enneagram, etc.)
-- **Energy** — energizers, drains, and peak working time
+- **Energy** — energizers, drains, peak working time
 - **Wins** — with `identity_reveal` field: what each win says about who they are
 - **Challenges** — raised, resolved, and how
-- **Financial context** — optional but useful for coaching in context
-- **Personal context** — family, health, constraints
-- **Key relationships** — who influences decisions, sources of support and drag
 - **Vision** — long-term direction and purpose
-- **Positioning** — niche, differentiator, ICP (if applicable)
+- **Key relationships** — who influences decisions, sources of support and drag
 
 Every entry is dated. Context builds across months, not just sessions.
 
-#### `core/goals.yaml`
-Source of truth for active goals. Tracks:
+#### `core/goals.yaml` — Source of truth for active goals
+
 - Priority ranking
 - Progress percentage
 - Status (on_track, at_risk, stalled, complete)
-- Key results with individual due dates and statuses
+- Key results with individual due dates
 - Notes on context and decisions
 
-Goals are never silently stalled. If a goal hasn't moved in 14+ days, Claude names it.
+Goals never silently stall. Fourteen-plus days without movement and Claude names it.
 
-#### `core/accountability.md`
-Every commitment made in a session lands here with a due date. Checked at the start of every session via `/start`. Nothing slides without being named.
+#### `core/accountability.md` — Every commitment, tracked
 
-Format: commitment, owner, due date, status (not started / in progress / complete / dropped).
+Every commitment made in a session lands here with a due date. Surfaced at `/start`. Nothing slides without being named.
 
-#### `core/coach-notes.md`
-Claude's private coaching journal. Updated after every session. Contains:
-- **Session entries** — what surfaced, how it was said, what it revealed, what to watch
-- **Overarching patterns** — themes that have appeared across multiple sessions
+#### `core/coach-notes.md` — The coaching journal
 
-Written like a coach's private notes, not structured data. This is where coaching insight lives between sessions.
-
-#### `frameworks/framework-workbook.md` *(optional)*
-If you're working through a structured coaching program, this file tracks your progress through the workbook questions. Status markers:
-- `[ ]` — not yet addressed
-- `[~]` — discussed, answer in progress
-- `[x]` — fully answered
-
-Questions are integrated naturally into sessions (1–3 per session), not drilled mechanically.
+Claude's private observations across sessions. Written like a coach's notebook — what surfaced, how it was said, what it revealed, what to watch. This is where pattern recognition lives between sessions.
 
 ---
 
 ### Layer 3 — Short-Term Memory (Session Context)
 
-Each session, Claude reads the long-term memory files and constructs working context:
-- What goals are on track vs. at risk
-- Which commitments are overdue or due soon
-- Where you are in the workbook (if using one)
-- What patterns have been surfacing recently (from coach-notes)
-
-This is "re-hydrated" at the start of every session via `/start`. It's not stored separately — it's the live synthesis of the persistent files at session open.
+At `/start`, Claude synthesizes the long-term files into live working context: what's on track, what's overdue, what patterns have been surfacing, where you are in the workbook. Re-synthesized fresh every session.
 
 ---
 
 ### Layer 4 — Optional Coaching Framework
 
-If you have a structured program, book, or methodology you're working through, drop it into `./frameworks/`. The system supports:
+Drop in any book, program, or methodology. The system supports:
 
-- **A workbook** (`frameworks/framework-workbook.md`) — questions you work through over time
-- **Guides** (`frameworks/guides/`) — specific tools, formulas, or cheat sheets Claude uses when a topic arises
+- **Guides** (`frameworks/guides/`) — specific tools Claude pulls into sessions when a topic arises
 - **A guide index** (`frameworks/guides_index.md`) — lookup table Claude reads to find the right guide
+- **A workbook** (`frameworks/framework-workbook.md`) — questions worked through progressively over time
 
-When a topic surfaces in session, Claude checks the index, reads the relevant guide, and coaches from that material directly — rather than improvising.
+An example framework is included: `frameworks/example-founder-clarity/` — covers vision, decisions, energy, and beliefs. Fully original, ready to use.
 
-See [frameworks/README.md](frameworks/README.md) for how to structure your own framework.
+See `frameworks/README.md` for how to build your own from any source material.
 
 ---
 
 ### Layer 5 — Session Capture (`sessions/`)
 
-One markdown file per coaching session. Created during `/session`. Standard format:
+One markdown file per session, created at `/session` close. Standard format:
 
 ```
 # Session — YYYY-MM-DD
@@ -159,13 +182,11 @@ One markdown file per coaching session. Created during `/session`. Standard form
 ## Topics Covered
 ## Key Insights
 ## Decisions
-## Commitments (table: What | Owner | Due)
+## Commitments (What | Owner | Due)
 ## Open Questions
 ## Goals Updated
 ## Profile Updated
 ```
-
-Sessions are the audit trail. The long-term memory files (goals, profile, coach-notes, accountability) drive future sessions — but sessions are the source of truth for what was discussed on any given date.
 
 ---
 
@@ -176,30 +197,27 @@ Sessions are the audit trail. The long-term memory files (goals, profile, coach-
 1. Read `mastercoach/MasterCoach.md`, `core/goals.yaml`, `core/profile.yaml`, `core/accountability.md`, `core/coach-notes.md`
 2. Read `frameworks/framework-workbook.md` if it exists
 3. Identify overdue commitments and those due within 7 days
-4. Find the next unanswered workbook questions (if applicable)
-5. Open in 2–4 sentences following this sequence:
-   - **Check-in** — one question on energy/mindset to calibrate where you are
+4. Open in 2–4 sentences:
+   - **Check-in** — one question on energy/mindset
    - **Wins & Gains** — surface a win before anything else (non-negotiable)
    - **Accountability** if anything is overdue — direct, no softening
-   - **Workbook question** if no urgency — natural, not mechanical
+   - **Workbook question** if no urgency
    - **Open door** — "What's on your mind today?"
 
 #### `/session` — Close a Session
 
-6-step structured close. Each step proposes changes and waits for your confirmation before writing.
-
 | Step | What happens |
 |------|-------------|
 | 1 — Session Summary | Topics, insights, decisions, commitments, open questions |
-| 1b — Wins & Gains | Name wins explicitly; anchor to identity ("What does this tell you about who you are?"); write to profile.yaml with `identity_reveal` |
+| 1b — Wins & Gains | Name wins; anchor to identity ("What does this tell you about who you are?"); write to profile with `identity_reveal` |
 | 2 — Goals Update | Progress %, milestones, status changes, new goals |
-| 2b — Workbook Update | Record answers, update status markers (if using workbook) |
-| 3 — Profile Update | New context, patterns, beliefs, values, self-concept shifts, wins, relationships, energy |
+| 2b — Workbook Update | Record answers, update status markers |
+| 3 — Profile Update | New context, patterns, beliefs, values, self-concept shifts |
 | 4 — Session File | Create `./sessions/YYYY-MM-DD.md` |
 | 5 — Accountability Update | Mark complete, carry forward, add new |
 | 5b — Coach Notes | Narrative journal entry on what surfaced |
 
-Nothing gets written to any file without your explicit confirmation ("Y" or "update it").
+Nothing gets written without your confirmation.
 
 ---
 
@@ -223,17 +241,26 @@ Nothing gets written to any file without your explicit confirmation ("Y" or "upd
 │
 ├── frameworks/
 │   ├── README.md                      # How to add your own framework
-│   ├── framework-workbook.md          # Optional: workbook questions and answers
-│   ├── guides_index.md                # Optional: lookup table for guides
-│   └── guides/                        # Optional: individual guide files
+│   ├── example-founder-clarity/       # Ready-to-use example framework (vision, decisions, energy, beliefs)
+│   ├── framework-workbook.md          # Your workbook answers (if using one)
+│   ├── guides_index.md                # Lookup table for guides
+│   └── guides/                        # Individual guide files
 │
 └── .claude/
     └── commands/
-        ├── onboard.md                 # /onboard — initial setup interview
-        ├── buildframework.md          # /buildframework — build or update framework
-        ├── start.md                   # /start — begin a session
-        └── session.md                 # /session — close and log a session
+        ├── onboard.md                 # /onboard
+        ├── buildframework.md          # /buildframework
+        ├── start.md                   # /start
+        └── session.md                 # /session
 ```
+
+---
+
+## Your Data Stays Local
+
+All session data lives in your local files — nothing is sent anywhere beyond your Claude API calls. `core/profile.yaml`, session files, and coach notes are gitignored by default to prevent accidental exposure.
+
+**Want to back up to a private repository?** That's encouraged. Edit `.gitignore` to include those files and push to a private repo. Just don't push personal coaching data to a public repo.
 
 ---
 
@@ -242,37 +269,51 @@ Nothing gets written to any file without your explicit confirmation ("Y" or "upd
 | File | Updated by | Trigger |
 |------|-----------|---------|
 | `core/goals.yaml` | `/session` Step 2 | Progress discussed, milestone hit, new goal set |
-| `core/profile.yaml` | `/session` Steps 1b + 3 | Wins (with identity_reveal), beliefs, values, self-concept shifts, patterns, relationships, energy |
-| `core/accountability.md` | `/session` Step 5 | New commitments made; old ones resolved |
-| `frameworks/framework-workbook.md` | `/session` Step 2b | Workbook questions answered in session |
+| `core/profile.yaml` | `/session` Steps 1b + 3 | Wins, beliefs, values, self-concept shifts, patterns |
+| `core/accountability.md` | `/session` Step 5 | New commitments; old ones resolved |
+| `frameworks/framework-workbook.md` | `/session` Step 2b | Workbook questions answered |
 | `core/coach-notes.md` | `/session` Step 5b | End of every substantive session |
 | `sessions/YYYY-MM-DD.md` | `/session` Step 4 | End of every session |
 
-**Nothing is written mid-session.** Claude observes and notes silently — like a coach writing in their notebook. At `/session` close, all changes are presented in one batch review. One "Y" writes everything.
+Nothing is written mid-session. Claude observes silently — like a coach writing in their notebook. At `/session` close, all changes are presented in one batch review.
 
 ---
 
-## Safety Rules
+## What Makes This Different from a Chatbot
 
-- Claude never writes mid-session — all file changes are batched and presented once at `/session` close
-- One "Y" writes everything; flag any specific item to adjust before writing
-- `mastercoach/MasterCoach.md` is read-only — Claude does not modify it during sessions
-- Treat all business information (financials, customer names, strategy) as confidential
-- Decisions that have been made aren't reopened unless material new information surfaces
-- If a topic doesn't connect to any active goal, Claude names it
+**A real coaching standard.** `MasterCoach.md` defines the methodology — Level 3 Listening, Champion/Challenger calibration, identity-level coaching. Not improvised; not generic.
 
----
+**Memory builds.** After 10 sessions, Claude knows your wiring, your blind spots, your limiting beliefs, your patterns. That context doesn't reset.
 
-## What Makes This System Different from a Chatbot
+**Accountability is structural.** Commitments live in a file with due dates. `/start` surfaces them at the top of every session. Nothing slides without being named.
 
-**A real coaching standard.** `mastercoach/MasterCoach.md` defines the methodology every session runs on — Level 3 Listening, Champion/Challenger calibration, identity-level coaching, Wins & Gains. It's not improvised; it's a standard.
+**Pattern recognition persists.** `coach-notes.md` accumulates observations. Recurring themes are named and tracked — not forgotten after one session.
 
-**Memory builds.** Every session adds to `profile.yaml` and `coach-notes.md`. After 10 sessions, Claude knows your wiring, your blind spots, your limiting beliefs, your values, your patterns. That context doesn't reset.
-
-**Accountability is structural.** Commitments live in a file with due dates. `/start` surfaces them at the top of every session. There's no friction-free way to avoid them.
-
-**Pattern recognition persists.** `coach-notes.md` accumulates observations across sessions. Recurring themes are named and tracked — not forgotten after one session.
-
-**The framework is yours.** Drop in any program, book, or methodology. The system coaches from your material directly — not improvised generic advice.
+**The framework is yours.** Drop in any program, book, or methodology. The system coaches from your material directly.
 
 **The coach role is enforced.** `CLAUDE.md` holds Claude to a standard: challenge, don't validate; recommend, don't summarize; close decisions, don't reopen them; name conflicts, don't soften them.
+
+---
+
+## Contributing
+
+Pull requests welcome. Especially interested in:
+- Example frameworks (original content only — no copyrighted material)
+- Improvements to the MasterCoach methodology
+- New slash commands
+- Better onboarding flow
+
+---
+
+## Built By
+
+**Liam O'Brien** — founder, builder, Claude Code enthusiast.
+
+[LinkedIn](https://www.linkedin.com/in/liam-obrien/) · [X / Twitter](https://x.com/liamlive) · [GitHub](https://github.com/liamodev/) · [Altitude7](https://www.altitude7.com/)
+
+If this is useful to you, a star goes a long way. And if you build something interesting on top of it, reach out.
+
+---
+
+
+*Built on [Claude Code](https://claude.ai/code) — Anthropic's official CLI.*

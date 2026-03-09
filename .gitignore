@@ -1,0 +1,35 @@
+# =============================================================================
+# PERSONAL COACHING DATA — PRIVATE BY DEFAULT
+# =============================================================================
+# The files below contain your goals, profile, session notes, commitments,
+# and coaching history. They are gitignored to prevent accidental exposure
+# if you ever push this repo publicly.
+#
+# WANT TO BACK UP TO A PRIVATE REPOSITORY?
+# That's a great idea — remove the relevant lines below, then push to a
+# private repo. Your data stays between you and your git host.
+#
+# ⚠️  Never push these files to a public repository.
+# =============================================================================
+
+# Your evolving profile, beliefs, values, and history
+core/profile.yaml
+core/profile*.yaml
+
+# Active goals and milestone progress
+core/goals.yaml
+
+# Commitments and accountability tracking
+core/accountability.md
+
+# Coach's private journal — patterns and observations across sessions
+core/coach-notes.md
+
+# Session transcripts and notes
+sessions/*.md
+
+# Framework workbook answers (if using one)
+frameworks/framework-workbook.md
+
+# Keep the sessions folder itself (so the directory exists in the repo)
+!sessions/.gitkeep
