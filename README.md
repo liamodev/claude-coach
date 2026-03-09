@@ -311,7 +311,7 @@ Pull requests welcome. Especially interested in:
 
 ## Built By
 
-**Liam O'Brien** — founder, builder, Claude Code enthusiast.
+**Liam OBrien** — founder, builder, Claude Code enthusiast.
 
 [LinkedIn](https://www.linkedin.com/in/liam-obrien/) · [X / Twitter](https://x.com/liamlive) · [GitHub](https://github.com/liamodev/) · [Altitude7](https://www.altitude7.com/)
 
