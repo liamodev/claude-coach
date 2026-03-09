@@ -1,6 +1,10 @@
 # Claude Coach
 
-*Built by [Liam O'Brien](https://www.linkedin.com/in/liam-obrien/) · [X](https://x.com/liamlive) · [GitHub](https://github.com/liamodev/) · [Altitude7](https://www.altitude7.com/)*
+<p align="center">
+  <img src="ClaudeCoach.png" alt="Claude Coach" width="600">
+</p>
+
+*Built by [Liam OBrien](https://www.linkedin.com/in/liam-obrien/) · [X](https://x.com/liamlive) · [GitHub](https://github.com/liamodev/) · [Altitude7](https://www.altitude7.com/)*
 
 ---
 
