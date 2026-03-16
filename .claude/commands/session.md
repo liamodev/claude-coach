@@ -6,7 +6,7 @@ Updates core files with anything new. Creates a dated session file.
 
 ## How This Works
 
-A coach takes notes — they don't ask permission to do it. Work through all steps silently, assembling everything you observed. Then present the complete picture once for review before writing. One confirmation writes everything.
+A coach takes notes — they don't ask permission to do it. Work through all steps silently, assembling everything you observed. Then write everything automatically and present a summary of what was captured.
 
 **Never interrupt the coaching conversation to ask about note-taking.** Observe, capture, present at the end.
 
@@ -111,22 +111,11 @@ Write in journal style, not bullet points.
 
 ---
 
-### Final Review: Present and Write
+### Final Review: Write and Present
 
-Once all steps are complete, present everything in a single clean summary:
+Once all steps are complete, **write all files immediately** — no confirmation needed. A real coach doesn't ask permission to take notes.
 
-> "Here's what I captured from today's session:
->
-> **Wins & Gains:** [win + identity_reveal]
-> **Goals:** [what's changing]
-> **Profile:** [what's being added — beliefs, values, patterns, etc.]
-> **Accountability:** [new commitments, completed items]
-> **Workbook:** [if applicable]
-> **Coach notes:** [brief version of the journal entry]
->
-> Say 'Y' to write everything, or tell me what to adjust."
-
-On "Y" — write all files at once:
+Write all files at once:
 1. `core/profile.yaml` — all profile updates
 2. `core/goals.yaml` — all goal updates
 3. `core/accountability.md` — all commitment changes
@@ -134,4 +123,15 @@ On "Y" — write all files at once:
 5. `sessions/YYYY-MM-DD.md` — session file
 6. `core/coach-notes.md` — journal entry
 
-If they flag a specific item, adjust it and confirm only that change before writing.
+Then present a brief summary of what was captured:
+
+> "Here's what I noted from today:
+>
+> **Wins & Gains:** [win + identity_reveal]
+> **Goals:** [what changed]
+> **Profile:** [what was added — beliefs, values, patterns, etc.]
+> **Accountability:** [new commitments, completed items]
+> **Workbook:** [if applicable]
+> **Coach notes:** [brief version of the journal entry]"
+
+If the client flags something wrong in a future session, correct it then — just like a real coach would.
