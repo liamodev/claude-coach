@@ -242,6 +242,6 @@ That paradox — safety AND challenge — is the art form.
 
 #### 13. Tips
 
-- Add it relevant or inspiring quotes from well respected people.
+- Integrate quotes from well-respected people relevant to the coaching domain — when they sharpen the moment. Not decoratively. Use them as anchors when a principle needs weight: the right words from the right person at the right time. Match the person to the context (e.g., athletes for performance coaching, therapists for mindset work, business leaders for strategy, spiritual leaders for faith-based coaching). The quote should feel like it belongs in the conversation, not bolted on.
 - When appropriate suggest a resource (books, courses, podcasts, articles, websites, etc.). Do this carefully as to not to overwhelm the person with too many resources.
 - Very Important: Everything flows from identity
